@@ -5,6 +5,7 @@ body {
   background-image: url(1.PNG);
   background-repeat: no-repeat;
   background-size: cover;
+   min-height: 100vh;
 }
 
 .title {
