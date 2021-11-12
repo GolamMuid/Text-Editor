@@ -22,33 +22,39 @@
     <div class="title">
         Text Editor by Tonmoy T.
     </div>
-    <div class="buttons">
 
-        <button onclick="bold()" class="button"> <b> bold </b> </button>
-        <button onclick="italic()" class="button"> <i> italic </i> </button>
-        <button onclick="underlined()" class="button"> <u> underline </u> </button>
-        <button onclick="left()" class="button align"> <i class="fas fa-align-left"></i> </button>
-        <button onclick="center()" class="button align"> <i class="fas fa-align-center"></i> </button>
-        <button onclick="right()" class="button align"> <i class="fas fa-align-right"></i> </button>
-        <!-- <button onclick="sizechange('increase')" class="button"> <i class="fas fa-angle-up"></i> </button>
-        <button onclick="sizechange('decrease')" class="button"> <i class="fas fa-angle-down"></i> </button> -->
+    <div class="buttonContainer">
+
+        <button onclick="bold()" id="bold" class="button"> <b> bold </b> </button>
+        <button onclick="italic()" id="italic" class="button"> <i> italic </i> </button>
+        <button onclick="underlined()" id="underlined" class="button"> <u> underline </u> </button>
+        <button onclick="left()" id="leftAlign" class="button"> <i class="fas fa-align-left"></i> </button>
+        <button onclick="center()" id="centerAlign" class="button"> <i class="fas fa-align-center"></i> </button>
+        <button onclick="right()" id="rightAlign" class="button"> <i class="fas fa-align-right"></i> </button>
         <button id="increase" class="button"> <i class="fas fa-angle-up"></i> </button>
         <button id="decrease" class="button"> <i class="fas fa-angle-down"></i> </button>
 
     </div>
 
+    <div class="fontContainer">
+        <input id="fontNumber" type="number" placeholder="Manual font size input">
+    </div>
+
     <div class="container">
 
         <div class="boxes">
+
             <div class="inputArea">
                 <p>Your Document Text</p>
                 <textarea id="input"></textarea>
             </div>
+
             <div class="inputArea">
                 <p>Formatted Text</p>
                 <textarea id="output" readonly></textarea>
             </div>
         </div>
+
     </div>
 
     </div>
